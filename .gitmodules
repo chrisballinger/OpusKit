@@ -1,0 +1,3 @@
+[submodule "Submodules/Opus-iOS"]
+	path = Submodules/Opus-iOS
+	url = git@github.com:chrisballinger/Opus-iOS.git
