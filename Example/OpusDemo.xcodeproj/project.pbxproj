@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9813ED318B1C96E009544CB /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9813ED218B1C96E009544CB /* libopus.a */; };
+		D9813F0318B1D855009544CB /* CMBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F0218B1D855009544CB /* CMBRootViewController.m */; };
+		D9813F1E18B1DBB5009544CB /* CMBAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F1D18B1DBB5009544CB /* CMBAudioController.m */; };
+		D9813F3E18B1F6DE009544CB /* AEFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F2418B1F6DE009544CB /* AEFloatConverter.m */; };
+		D9813F3F18B1F6DE009544CB /* EZAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F2618B1F6DE009544CB /* EZAudio.m */; };
+		D9813F4018B1F6DE009544CB /* EZAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F2818B1F6DE009544CB /* EZAudioFile.m */; };
+		D9813F4218B1F6DE009544CB /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F2C18B1F6DE009544CB /* EZAudioPlot.m */; };
+		D9813F4318B1F6DE009544CB /* EZAudioPlotGL.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F2E18B1F6DE009544CB /* EZAudioPlotGL.m */; };
+		D9813F4418B1F6DE009544CB /* EZAudioPlotGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F3018B1F6DE009544CB /* EZAudioPlotGLKViewController.m */; };
+		D9813F4518B1F6DE009544CB /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F3218B1F6DE009544CB /* EZMicrophone.m */; };
+		D9813F4618B1F6DE009544CB /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F3418B1F6DE009544CB /* EZOutput.m */; };
+		D9813F4718B1F6DE009544CB /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F3618B1F6DE009544CB /* EZPlot.m */; };
+		D9813F4818B1F6DE009544CB /* EZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F3818B1F6DE009544CB /* EZRecorder.m */; };
+		D9813F4D18B1FD18009544CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9813F4C18B1FD18009544CB /* AudioToolbox.framework */; };
+		D9813F4F18B1FD1D009544CB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9813F4E18B1FD1D009544CB /* GLKit.framework */; };
+		D9813F5118B1FD29009544CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9813F5018B1FD29009544CB /* AVFoundation.framework */; };
+		D9813F5418B2DB3B009544CB /* OpusKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F5318B2DB3B009544CB /* OpusKit.m */; };
+		D9813F6118B2E2F3009544CB /* OKEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F6018B2E2F3009544CB /* OKEncoder.m */; };
+		D9813F6418B2E30C009544CB /* OKDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F6318B2E30C009544CB /* OKDecoder.m */; };
+		D9813F6718B2E368009544CB /* OKPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F6618B2E368009544CB /* OKPacket.m */; };
+		D9813F6A18B2E40A009544CB /* OKCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F6918B2E40A009544CB /* OKCodec.m */; };
+		D9813F6D18B2E505009544CB /* OKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D9813F6C18B2E505009544CB /* OKUtilities.m */; };
+		D9813F8D18B3282F009544CB /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = D9813F8818B3282F009544CB /* TPCircularBuffer+AudioBufferList.c */; };
+		D9813F8E18B3282F009544CB /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = D9813F8A18B3282F009544CB /* TPCircularBuffer.c */; };
+		D9B706AB18AC13AB00F1B5E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B706AA18AC13AB00F1B5E9 /* Foundation.framework */; };
+		D9B706AD18AC13AB00F1B5E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B706AC18AC13AB00F1B5E9 /* CoreGraphics.framework */; };
+		D9B706AF18AC13AB00F1B5E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B706AE18AC13AB00F1B5E9 /* UIKit.framework */; };
+		D9B706B518AC13AB00F1B5E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9B706B318AC13AB00F1B5E9 /* InfoPlist.strings */; };
+		D9B706B718AC13AB00F1B5E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B706B618AC13AB00F1B5E9 /* main.m */; };
+		D9B706BB18AC13AB00F1B5E9 /* CMBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B706BA18AC13AB00F1B5E9 /* CMBAppDelegate.m */; };
+		D9B706BD18AC13AB00F1B5E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B706BC18AC13AB00F1B5E9 /* Images.xcassets */; };
+		D9B706C418AC13AB00F1B5E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B706C318AC13AB00F1B5E9 /* XCTest.framework */; };
+		D9B706C518AC13AB00F1B5E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B706AA18AC13AB00F1B5E9 /* Foundation.framework */; };
+		D9B706C618AC13AB00F1B5E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B706AE18AC13AB00F1B5E9 /* UIKit.framework */; };
+		D9B706CE18AC13AB00F1B5E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9B706CC18AC13AB00F1B5E9 /* InfoPlist.strings */; };
+		D9B706D018AC13AB00F1B5E9 /* OpusDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B706CF18AC13AB00F1B5E9 /* OpusDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9B706C718AC13AB00F1B5E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B7069F18AC13AB00F1B5E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9B706A618AC13AB00F1B5E9;
+			remoteInfo = OpusDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9813ECD18B1C96E009544CB /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		D9813ECE18B1C96E009544CB /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		D9813ECF18B1C96E009544CB /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		D9813ED018B1C96E009544CB /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		D9813ED218B1C96E009544CB /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		D9813F0118B1D855009544CB /* CMBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBRootViewController.h; sourceTree = "<group>"; };
+		D9813F0218B1D855009544CB /* CMBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBRootViewController.m; sourceTree = "<group>"; };
+		D9813F1C18B1DBB5009544CB /* CMBAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBAudioController.h; sourceTree = "<group>"; };
+		D9813F1D18B1DBB5009544CB /* CMBAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBAudioController.m; sourceTree = "<group>"; };
+		D9813F2318B1F6DE009544CB /* AEFloatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEFloatConverter.h; sourceTree = "<group>"; };
+		D9813F2418B1F6DE009544CB /* AEFloatConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEFloatConverter.m; sourceTree = "<group>"; };
+		D9813F2518B1F6DE009544CB /* EZAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudio.h; sourceTree = "<group>"; };
+		D9813F2618B1F6DE009544CB /* EZAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudio.m; sourceTree = "<group>"; };
+		D9813F2718B1F6DE009544CB /* EZAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioFile.h; sourceTree = "<group>"; };
+		D9813F2818B1F6DE009544CB /* EZAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioFile.m; sourceTree = "<group>"; };
+		D9813F2B18B1F6DE009544CB /* EZAudioPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlot.h; sourceTree = "<group>"; };
+		D9813F2C18B1F6DE009544CB /* EZAudioPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlot.m; sourceTree = "<group>"; };
+		D9813F2D18B1F6DE009544CB /* EZAudioPlotGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlotGL.h; sourceTree = "<group>"; };
+		D9813F2E18B1F6DE009544CB /* EZAudioPlotGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlotGL.m; sourceTree = "<group>"; };
+		D9813F2F18B1F6DE009544CB /* EZAudioPlotGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlotGLKViewController.h; sourceTree = "<group>"; };
+		D9813F3018B1F6DE009544CB /* EZAudioPlotGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlotGLKViewController.m; sourceTree = "<group>"; };
+		D9813F3118B1F6DE009544CB /* EZMicrophone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMicrophone.h; sourceTree = "<group>"; };
+		D9813F3218B1F6DE009544CB /* EZMicrophone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMicrophone.m; sourceTree = "<group>"; };
+		D9813F3318B1F6DE009544CB /* EZOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZOutput.h; sourceTree = "<group>"; };
+		D9813F3418B1F6DE009544CB /* EZOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZOutput.m; sourceTree = "<group>"; };
+		D9813F3518B1F6DE009544CB /* EZPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPlot.h; sourceTree = "<group>"; };
+		D9813F3618B1F6DE009544CB /* EZPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPlot.m; sourceTree = "<group>"; };
+		D9813F3718B1F6DE009544CB /* EZRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZRecorder.h; sourceTree = "<group>"; };
+		D9813F3818B1F6DE009544CB /* EZRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZRecorder.m; sourceTree = "<group>"; };
+		D9813F4C18B1FD18009544CB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D9813F4E18B1FD1D009544CB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D9813F5018B1FD29009544CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9813F5218B2DB3B009544CB /* OpusKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpusKit.h; path = ../OpusKit/OpusKit.h; sourceTree = "<group>"; };
+		D9813F5318B2DB3B009544CB /* OpusKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpusKit.m; path = ../OpusKit/OpusKit.m; sourceTree = "<group>"; };
+		D9813F5F18B2E2F3009544CB /* OKEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKEncoder.h; path = ../OpusKit/OKEncoder.h; sourceTree = "<group>"; };
+		D9813F6018B2E2F3009544CB /* OKEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKEncoder.m; path = ../OpusKit/OKEncoder.m; sourceTree = "<group>"; };
+		D9813F6218B2E30C009544CB /* OKDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKDecoder.h; path = ../OpusKit/OKDecoder.h; sourceTree = "<group>"; };
+		D9813F6318B2E30C009544CB /* OKDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKDecoder.m; path = ../OpusKit/OKDecoder.m; sourceTree = "<group>"; };
+		D9813F6518B2E368009544CB /* OKPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKPacket.h; path = ../OpusKit/OKPacket.h; sourceTree = "<group>"; };
+		D9813F6618B2E368009544CB /* OKPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKPacket.m; path = ../OpusKit/OKPacket.m; sourceTree = "<group>"; };
+		D9813F6818B2E40A009544CB /* OKCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKCodec.h; path = ../OpusKit/OKCodec.h; sourceTree = "<group>"; };
+		D9813F6918B2E40A009544CB /* OKCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKCodec.m; path = ../OpusKit/OKCodec.m; sourceTree = "<group>"; };
+		D9813F6B18B2E505009544CB /* OKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKUtilities.h; path = ../OpusKit/OKUtilities.h; sourceTree = "<group>"; };
+		D9813F6C18B2E505009544CB /* OKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKUtilities.m; path = ../OpusKit/OKUtilities.m; sourceTree = "<group>"; };
+		D9813F8818B3282F009544CB /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		D9813F8918B3282F009544CB /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		D9813F8A18B3282F009544CB /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		D9813F8B18B3282F009544CB /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		D9B706A718AC13AB00F1B5E9 /* OpusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B706AA18AC13AB00F1B5E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9B706AC18AC13AB00F1B5E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9B706AE18AC13AB00F1B5E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9B706B218AC13AB00F1B5E9 /* OpusDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpusDemo-Info.plist"; sourceTree = "<group>"; };
+		D9B706B418AC13AB00F1B5E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9B706B618AC13AB00F1B5E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9B706B818AC13AB00F1B5E9 /* OpusDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpusDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D9B706B918AC13AB00F1B5E9 /* CMBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMBAppDelegate.h; sourceTree = "<group>"; };
+		D9B706BA18AC13AB00F1B5E9 /* CMBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMBAppDelegate.m; sourceTree = "<group>"; };
+		D9B706BC18AC13AB00F1B5E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9B706C218AC13AB00F1B5E9 /* OpusDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpusDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B706C318AC13AB00F1B5E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D9B706CB18AC13AB00F1B5E9 /* OpusDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpusDemoTests-Info.plist"; sourceTree = "<group>"; };
+		D9B706CD18AC13AB00F1B5E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9B706CF18AC13AB00F1B5E9 /* OpusDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpusDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9B706A418AC13AB00F1B5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9813F5118B1FD29009544CB /* AVFoundation.framework in Frameworks */,
+				D9813F4F18B1FD1D009544CB /* GLKit.framework in Frameworks */,
+				D9813F4D18B1FD18009544CB /* AudioToolbox.framework in Frameworks */,
+				D9B706AD18AC13AB00F1B5E9 /* CoreGraphics.framework in Frameworks */,
+				D9B706AF18AC13AB00F1B5E9 /* UIKit.framework in Frameworks */,
+				D9813ED318B1C96E009544CB /* libopus.a in Frameworks */,
+				D9B706AB18AC13AB00F1B5E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B706BF18AC13AB00F1B5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B706C418AC13AB00F1B5E9 /* XCTest.framework in Frameworks */,
+				D9B706C618AC13AB00F1B5E9 /* UIKit.framework in Frameworks */,
+				D9B706C518AC13AB00F1B5E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9813ECB18B1C96E009544CB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D9813ECC18B1C96E009544CB /* opus */,
+			);
+			name = include;
+			path = "../Submodules/Opus-iOS/dependencies/include";
+			sourceTree = "<group>";
+		};
+		D9813ECC18B1C96E009544CB /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				D9813ECD18B1C96E009544CB /* opus.h */,
+				D9813ECE18B1C96E009544CB /* opus_defines.h */,
+				D9813ECF18B1C96E009544CB /* opus_multistream.h */,
+				D9813ED018B1C96E009544CB /* opus_types.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		D9813ED118B1C96E009544CB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D9813ED218B1C96E009544CB /* libopus.a */,
+			);
+			name = lib;
+			path = "../Submodules/Opus-iOS/dependencies/lib";
+			sourceTree = "<group>";
+		};
+		D9813ED418B1C971009544CB /* libopus */ = {
+			isa = PBXGroup;
+			children = (
+				D9813ECB18B1C96E009544CB /* include */,
+				D9813ED118B1C96E009544CB /* lib */,
+			);
+			name = libopus;
+			sourceTree = "<group>";
+		};
+		D9813F2218B1F6DE009544CB /* EZAudio */ = {
+			isa = PBXGroup;
+			children = (
+				D9813F2318B1F6DE009544CB /* AEFloatConverter.h */,
+				D9813F2418B1F6DE009544CB /* AEFloatConverter.m */,
+				D9813F2518B1F6DE009544CB /* EZAudio.h */,
+				D9813F2618B1F6DE009544CB /* EZAudio.m */,
+				D9813F2718B1F6DE009544CB /* EZAudioFile.h */,
+				D9813F2818B1F6DE009544CB /* EZAudioFile.m */,
+				D9813F2B18B1F6DE009544CB /* EZAudioPlot.h */,
+				D9813F2C18B1F6DE009544CB /* EZAudioPlot.m */,
+				D9813F2D18B1F6DE009544CB /* EZAudioPlotGL.h */,
+				D9813F2E18B1F6DE009544CB /* EZAudioPlotGL.m */,
+				D9813F2F18B1F6DE009544CB /* EZAudioPlotGLKViewController.h */,
+				D9813F3018B1F6DE009544CB /* EZAudioPlotGLKViewController.m */,
+				D9813F3118B1F6DE009544CB /* EZMicrophone.h */,
+				D9813F3218B1F6DE009544CB /* EZMicrophone.m */,
+				D9813F3318B1F6DE009544CB /* EZOutput.h */,
+				D9813F3418B1F6DE009544CB /* EZOutput.m */,
+				D9813F3518B1F6DE009544CB /* EZPlot.h */,
+				D9813F3618B1F6DE009544CB /* EZPlot.m */,
+				D9813F3718B1F6DE009544CB /* EZRecorder.h */,
+				D9813F3818B1F6DE009544CB /* EZRecorder.m */,
+			);
+			name = EZAudio;
+			path = ../Submodules/EZAudio/EZAudio;
+			sourceTree = "<group>";
+		};
+		D9813F5518B2DB47009544CB /* OpusKit */ = {
+			isa = PBXGroup;
+			children = (
+				D9813F6B18B2E505009544CB /* OKUtilities.h */,
+				D9813F6C18B2E505009544CB /* OKUtilities.m */,
+				D9813F6818B2E40A009544CB /* OKCodec.h */,
+				D9813F6918B2E40A009544CB /* OKCodec.m */,
+				D9813F5F18B2E2F3009544CB /* OKEncoder.h */,
+				D9813F6018B2E2F3009544CB /* OKEncoder.m */,
+				D9813F6218B2E30C009544CB /* OKDecoder.h */,
+				D9813F6318B2E30C009544CB /* OKDecoder.m */,
+				D9813F6518B2E368009544CB /* OKPacket.h */,
+				D9813F6618B2E368009544CB /* OKPacket.m */,
+				D9813F5218B2DB3B009544CB /* OpusKit.h */,
+				D9813F5318B2DB3B009544CB /* OpusKit.m */,
+			);
+			name = OpusKit;
+			sourceTree = "<group>";
+		};
+		D9813F8618B3282F009544CB /* TPCircularBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				D9813F8818B3282F009544CB /* TPCircularBuffer+AudioBufferList.c */,
+				D9813F8918B3282F009544CB /* TPCircularBuffer+AudioBufferList.h */,
+				D9813F8A18B3282F009544CB /* TPCircularBuffer.c */,
+				D9813F8B18B3282F009544CB /* TPCircularBuffer.h */,
+			);
+			name = TPCircularBuffer;
+			path = ../Submodules/TPCircularBuffer;
+			sourceTree = "<group>";
+		};
+		D9B7069E18AC13AB00F1B5E9 = {
+			isa = PBXGroup;
+			children = (
+				D9813F5518B2DB47009544CB /* OpusKit */,
+				D9813F8618B3282F009544CB /* TPCircularBuffer */,
+				D9813F2218B1F6DE009544CB /* EZAudio */,
+				D9813ED418B1C971009544CB /* libopus */,
+				D9B706B018AC13AB00F1B5E9 /* OpusDemo */,
+				D9B706C918AC13AB00F1B5E9 /* OpusDemoTests */,
+				D9B706A918AC13AB00F1B5E9 /* Frameworks */,
+				D9B706A818AC13AB00F1B5E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9B706A818AC13AB00F1B5E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9B706A718AC13AB00F1B5E9 /* OpusDemo.app */,
+				D9B706C218AC13AB00F1B5E9 /* OpusDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9B706A918AC13AB00F1B5E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9813F5018B1FD29009544CB /* AVFoundation.framework */,
+				D9813F4E18B1FD1D009544CB /* GLKit.framework */,
+				D9813F4C18B1FD18009544CB /* AudioToolbox.framework */,
+				D9B706AA18AC13AB00F1B5E9 /* Foundation.framework */,
+				D9B706AC18AC13AB00F1B5E9 /* CoreGraphics.framework */,
+				D9B706AE18AC13AB00F1B5E9 /* UIKit.framework */,
+				D9B706C318AC13AB00F1B5E9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9B706B018AC13AB00F1B5E9 /* OpusDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9813F1C18B1DBB5009544CB /* CMBAudioController.h */,
+				D9813F1D18B1DBB5009544CB /* CMBAudioController.m */,
+				D9813F0118B1D855009544CB /* CMBRootViewController.h */,
+				D9813F0218B1D855009544CB /* CMBRootViewController.m */,
+				D9B706B918AC13AB00F1B5E9 /* CMBAppDelegate.h */,
+				D9B706BA18AC13AB00F1B5E9 /* CMBAppDelegate.m */,
+				D9B706BC18AC13AB00F1B5E9 /* Images.xcassets */,
+				D9B706B118AC13AB00F1B5E9 /* Supporting Files */,
+			);
+			path = OpusDemo;
+			sourceTree = "<group>";
+		};
+		D9B706B118AC13AB00F1B5E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9B706B218AC13AB00F1B5E9 /* OpusDemo-Info.plist */,
+				D9B706B318AC13AB00F1B5E9 /* InfoPlist.strings */,
+				D9B706B618AC13AB00F1B5E9 /* main.m */,
+				D9B706B818AC13AB00F1B5E9 /* OpusDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9B706C918AC13AB00F1B5E9 /* OpusDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9B706CF18AC13AB00F1B5E9 /* OpusDemoTests.m */,
+				D9B706CA18AC13AB00F1B5E9 /* Supporting Files */,
+			);
+			path = OpusDemoTests;
+			sourceTree = "<group>";
+		};
+		D9B706CA18AC13AB00F1B5E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9B706CB18AC13AB00F1B5E9 /* OpusDemoTests-Info.plist */,
+				D9B706CC18AC13AB00F1B5E9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9B706A618AC13AB00F1B5E9 /* OpusDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9B706D318AC13AB00F1B5E9 /* Build configuration list for PBXNativeTarget "OpusDemo" */;
+			buildPhases = (
+				D9B706A318AC13AB00F1B5E9 /* Sources */,
+				D9B706A418AC13AB00F1B5E9 /* Frameworks */,
+				D9B706A518AC13AB00F1B5E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpusDemo;
+			productName = OpusDemo;
+			productReference = D9B706A718AC13AB00F1B5E9 /* OpusDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9B706C118AC13AB00F1B5E9 /* OpusDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9B706D618AC13AB00F1B5E9 /* Build configuration list for PBXNativeTarget "OpusDemoTests" */;
+			buildPhases = (
+				D9B706BE18AC13AB00F1B5E9 /* Sources */,
+				D9B706BF18AC13AB00F1B5E9 /* Frameworks */,
+				D9B706C018AC13AB00F1B5E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9B706C818AC13AB00F1B5E9 /* PBXTargetDependency */,
+			);
+			name = OpusDemoTests;
+			productName = OpusDemoTests;
+			productReference = D9B706C218AC13AB00F1B5E9 /* OpusDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9B7069F18AC13AB00F1B5E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CMB;
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					D9B706C118AC13AB00F1B5E9 = {
+						TestTargetID = D9B706A618AC13AB00F1B5E9;
+					};
+				};
+			};
+			buildConfigurationList = D9B706A218AC13AB00F1B5E9 /* Build configuration list for PBXProject "OpusDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D9B7069E18AC13AB00F1B5E9;
+			productRefGroup = D9B706A818AC13AB00F1B5E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9B706A618AC13AB00F1B5E9 /* OpusDemo */,
+				D9B706C118AC13AB00F1B5E9 /* OpusDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9B706A518AC13AB00F1B5E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B706B518AC13AB00F1B5E9 /* InfoPlist.strings in Resources */,
+				D9B706BD18AC13AB00F1B5E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B706C018AC13AB00F1B5E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B706CE18AC13AB00F1B5E9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9B706A318AC13AB00F1B5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9813F8E18B3282F009544CB /* TPCircularBuffer.c in Sources */,
+				D9813F6118B2E2F3009544CB /* OKEncoder.m in Sources */,
+				D9813F4218B1F6DE009544CB /* EZAudioPlot.m in Sources */,
+				D9813F3E18B1F6DE009544CB /* AEFloatConverter.m in Sources */,
+				D9813F6A18B2E40A009544CB /* OKCodec.m in Sources */,
+				D9813F6418B2E30C009544CB /* OKDecoder.m in Sources */,
+				D9813F6D18B2E505009544CB /* OKUtilities.m in Sources */,
+				D9813F6718B2E368009544CB /* OKPacket.m in Sources */,
+				D9813F4718B1F6DE009544CB /* EZPlot.m in Sources */,
+				D9813F5418B2DB3B009544CB /* OpusKit.m in Sources */,
+				D9B706B718AC13AB00F1B5E9 /* main.m in Sources */,
+				D9813F4418B1F6DE009544CB /* EZAudioPlotGLKViewController.m in Sources */,
+				D9813F4818B1F6DE009544CB /* EZRecorder.m in Sources */,
+				D9813F4018B1F6DE009544CB /* EZAudioFile.m in Sources */,
+				D9813F4318B1F6DE009544CB /* EZAudioPlotGL.m in Sources */,
+				D9813F8D18B3282F009544CB /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				D9813F0318B1D855009544CB /* CMBRootViewController.m in Sources */,
+				D9813F4518B1F6DE009544CB /* EZMicrophone.m in Sources */,
+				D9813F3F18B1F6DE009544CB /* EZAudio.m in Sources */,
+				D9B706BB18AC13AB00F1B5E9 /* CMBAppDelegate.m in Sources */,
+				D9813F4618B1F6DE009544CB /* EZOutput.m in Sources */,
+				D9813F1E18B1DBB5009544CB /* CMBAudioController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B706BE18AC13AB00F1B5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B706D018AC13AB00F1B5E9 /* OpusDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9B706C818AC13AB00F1B5E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9B706A618AC13AB00F1B5E9 /* OpusDemo */;
+			targetProxy = D9B706C718AC13AB00F1B5E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9B706B318AC13AB00F1B5E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9B706B418AC13AB00F1B5E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D9B706CC18AC13AB00F1B5E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9B706CD18AC13AB00F1B5E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9B706D118AC13AB00F1B5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9B706D218AC13AB00F1B5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9B706D418AC13AB00F1B5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpusDemo/OpusDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../Submodules/MumbleKit/src",
+				);
+				INFOPLIST_FILE = "OpusDemo/OpusDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chrisbal/Documents/ChatSecure/OpusKit/Submodules/Opus-iOS/dependencies/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D9B706D518AC13AB00F1B5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpusDemo/OpusDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../Submodules/MumbleKit/src",
+				);
+				INFOPLIST_FILE = "OpusDemo/OpusDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chrisbal/Documents/ChatSecure/OpusKit/Submodules/Opus-iOS/dependencies/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D9B706D718AC13AB00F1B5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpusDemo.app/OpusDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpusDemo/OpusDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpusDemoTests/OpusDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D9B706D818AC13AB00F1B5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpusDemo.app/OpusDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpusDemo/OpusDemo-Prefix.pch";
+				INFOPLIST_FILE = "OpusDemoTests/OpusDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9B706A218AC13AB00F1B5E9 /* Build configuration list for PBXProject "OpusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B706D118AC13AB00F1B5E9 /* Debug */,
+				D9B706D218AC13AB00F1B5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B706D318AC13AB00F1B5E9 /* Build configuration list for PBXNativeTarget "OpusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B706D418AC13AB00F1B5E9 /* Debug */,
+				D9B706D518AC13AB00F1B5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B706D618AC13AB00F1B5E9 /* Build configuration list for PBXNativeTarget "OpusDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B706D718AC13AB00F1B5E9 /* Debug */,
+				D9B706D818AC13AB00F1B5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9B7069F18AC13AB00F1B5E9 /* Project object */;
+}
