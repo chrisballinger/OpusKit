@@ -12,12 +12,19 @@
 
 @implementation CMBAudioController
 
+- (void) dealloc {
+    if (_outputBuffer) {
+        TPCircularBufferCleanup(_outputBuffer);
+        free(_outputBuffer);
+    }
+}
 
-- (instancetype) init {
+- (id) init {
     if (self = [super init]) {
         [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {
             if (granted) {
                 [self setupMicrophone];
+                [self setupOutput];
             } else {
                 NSLog(@"Error: Need permission to record audio");
             }
@@ -25,6 +32,20 @@
         
     }
     return self;
+}
+
+- (void) setupOutput {
+    self.output = [EZOutput outputWithDataSource:self];
+    self.opusDecoder = [[OKDecoder alloc] initWithSampleRate:self.opusEncoder.sampleRate numberOfChannels:self.opusEncoder.numberOfChannels];
+    NSError *error = nil;
+    if (![self.opusDecoder setupDecoderWithError:&error]) {
+        NSLog(@"Error setting up opus decoder: %@", error);
+    }
+    self.outputBuffer = malloc(sizeof(TPCircularBuffer));
+    BOOL success = TPCircularBufferInit(_outputBuffer, 100000);
+    if (!success) {
+        NSLog(@"Error allocating output buffer");
+    }
 }
 
 - (void) setupMicrophone {
@@ -46,7 +67,7 @@
     NSError *error = nil;
     self.opusEncoder = [OKEncoder encoderForASBD:absd application:kOpusKitApplicationVoIP error:&error];
     if (error) {
-        NSLog(@"Error setting up opus: %@", error);
+        NSLog(@"Error setting up opus encoder: %@", error);
     }
 }
 
@@ -54,14 +75,35 @@
     [EZAudio printASBD:audioStreamBasicDescription];
 }
 
+- (void) decodePacket:(NSData*)packetData {
+    [self.opusDecoder decodePacket:packetData completionBlock:^(NSData *pcmData, NSUInteger numDecodedSamples, NSError *error) {
+        if (error) {
+            NSLog(@"Error decoding packet: %@", error);
+            return;
+        }
+        BOOL success = TPCircularBufferProduceBytes(_outputBuffer, packetData.bytes, packetData.length);
+        if (!success) {
+            NSLog(@"Error copying output pcm into buffer, insufficient space");
+        }
+    }];
+}
+
 - (void) microphone:(EZMicrophone *)microphone hasBufferList:(AudioBufferList *)bufferList withBufferSize:(UInt32)bufferSize withNumberOfChannels:(UInt32)numberOfChannels {
     [self.opusEncoder encodeBufferList:bufferList completionBlock:^(NSData *data, NSError *error) {
+        if (!self.output.isPlaying) {
+            [self.output startPlayback];
+        }
         if (data) {
             NSLog(@"opus data length: %d", data.length);
+            [self decodePacket:data];
         } else {
             NSLog(@"Error encoding frame to opus: %@", error);
         }
     }];
+}
+
+- (TPCircularBuffer*) outputShouldUseCircularBuffer:(EZOutput *)output {
+    return _outputBuffer;
 }
 
 @end

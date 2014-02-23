@@ -109,7 +109,7 @@ static const int kNumberOfSamplesPerChannel = 2880;
         if (availableSamples < kNumberOfSamplesPerChannel) {
             return;
         }
-        int returnValue = opus_encode(self.encoder, data, kNumberOfSamplesPerChannel, self.encoderOutputBuffer, self.encoderBufferLength);
+        int returnValue = opus_encode(_encoder, data, kNumberOfSamplesPerChannel, _encoderOutputBuffer, _encoderBufferLength);
         TPCircularBufferConsume(_circularBuffer, kNumberOfSamplesPerChannel * _inputASBD.mBytesPerFrame);
         if (returnValue < 0) {
             NSError *error = [OKUtilities errorForOpusErrorCode:returnValue];
