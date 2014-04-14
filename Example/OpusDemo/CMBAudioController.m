@@ -81,7 +81,7 @@
             NSLog(@"Error decoding packet: %@", error);
             return;
         }
-        BOOL success = TPCircularBufferProduceBytes(_outputBuffer, packetData.bytes, packetData.length);
+        BOOL success = TPCircularBufferProduceBytes(_outputBuffer, pcmData.bytes, pcmData.length);
         if (!success) {
             NSLog(@"Error copying output pcm into buffer, insufficient space");
         }
