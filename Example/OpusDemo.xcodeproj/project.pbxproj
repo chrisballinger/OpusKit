@@ -1136,11 +1136,12 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../Submodules/MumbleKit/src",
+					"$(SRCROOT)/",
 				);
 				INFOPLIST_FILE = "OpusDemo/OpusDemo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/chrisbal/Documents/ChatSecure/OpusKit/Submodules/Opus-iOS/dependencies/lib",
+					"$(SRCROOT)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1158,11 +1159,12 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../Submodules/MumbleKit/src",
+					"$(SRCROOT)/",
 				);
 				INFOPLIST_FILE = "OpusDemo/OpusDemo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/chrisbal/Documents/ChatSecure/OpusKit/Submodules/Opus-iOS/dependencies/lib",
+					"$(SRCROOT)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

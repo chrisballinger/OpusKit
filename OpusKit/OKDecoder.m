@@ -32,7 +32,7 @@ static const int kNumberOfSamplesPerChannel = 5760;
 
 - (id) initWithSampleRate:(OpusKitSampleRate)sampleRate numberOfChannels:(OpusKitChannels)channels {
     if (self = [super initWithSampleRate:sampleRate numberOfChannels:channels]) {
-        _forwardErrorCorrection = YES;
+        _forwardErrorCorrection = NO;
         _decoderBufferLength = kNumberOfSamplesPerChannel*self.numberOfChannels*sizeof(opus_int16);
         self.outputBuffer = malloc(_decoderBufferLength);
     }
